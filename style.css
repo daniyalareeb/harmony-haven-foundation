@@ -1,0 +1,1259 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}/* this will make the margin and padding zero for all pages*/
+
+/*This is start of header*/
+.header{
+	width: auto;
+	background-position:center ;
+	background: #87ceeb;
+	background-size: cover;
+	position: relative;
+}
+/*Thsi is For Logo Desing*/
+.logo{
+	width: 300px;
+	height:150px;
+}
+
+/*Here Slideshow MAking*/
+.slideshow-container{
+	position: relative;
+	margin: auto;
+	width: 100%;
+}
+.slideshow-container img{
+	vertical-align: middle;
+	height:800px;
+}
+
+.mySlides{
+	display:none;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:#87CEEB;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active{
+	background: #8fbc8f;
+}
+.dot:hover{
+	background: #90EE90;
+}
+.dott{
+	text-align: center;
+}
+/*this give fade effect while changing its slides*/
+.fade{
+	animation-name:fade ;
+	animation-duration: 1.5s;
+}
+.active{
+	background-color: #8FBC8F;
+}
+@keyframes fade{
+	from{opacity:0.4;}
+	to{opacity: 1;}
+} 
+
+
+/*this is start of search bar and button on navi*/
+.Dbuton{
+	color: black;
+	font-weight: 400;
+	font-size: 25px;
+}
+.Dbuton button{
+	background: #ff6700;
+}
+
+.Dbuton strong{
+	color: #ff6700;
+}
+.search{
+	width: 100%;
+	margin-left: 79%;
+}
+
+.search form{
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+.search input{
+	padding: 10px;
+	border: 1px solid #8fbc8f;
+	border-radius: 20px;
+	margin-right:10px;
+	font-size: 18px;
+
+}
+.search i{
+	color: #ff6700;
+}
+.search button{
+	padding: 10px;
+	background: #87ceeb;
+	border: none;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 30px;
+	cursor: pointer;
+}
+/*This Is Navigations Link*/
+
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav img{
+	width: 150px;
+
+}
+.navi-links{
+	flex: 1;
+	text-align: right;
+
+}
+.navi-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 8px;
+	position: relative;
+}
+.navi-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 500;
+
+}
+.navi-links ul li::after{
+	content: '';
+	width: 0;
+	height: 2px;
+	background: #e6e6fa;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+
+}
+
+.navi-links ul li:hover::after{
+	width: 100%;
+}/* make this effect as shadow later on*/
+
+.support-section{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.support-section h2{
+	text-align: center;
+	padding:50px;
+	color: #3b5998;
+	background:#8fbc8f;
+	border-radius: 80px;
+	font-weight: bold;
+	font-size: 25px;
+}
+.sectwo p{
+	color: black;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+	text-align: left;
+}
+.sectwo img{
+	width:350px ;
+	height: 350px;
+	border-radius: 15px;
+}
+
+.row{
+	display: flex;
+	margin-top: 5%;
+	justify-content: space-between;
+	margin-bottom: 100px;
+} /* this will make the margin 5% by top and display flex will show in block and 
+		justify content will display horizontally have space between the box */
+.sectwo{
+	flex-basis:23%;
+	background:#3b5998;
+	border-radius:70px;
+	margin-bottom: 40px;
+	margin-left: 10px;
+	padding: 30px 12px;
+	box-sizing:border-box;
+}
+
+/* this class is for section 2 and this will make the background color of box light blue
+	border radius makes box round,margin bottom maintain the space between box from bottom */
+
+.sectwo h3{
+	text-align: center;
+	font-weight:800 ;
+	margin: 15px;
+	font-size: 25px;
+	color:white;
+}
+.sectwo p{
+	line-height:28px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	
+}
+ /* this will align the text in the center font weight makes the font bold 
+	font size will be 25px and set the */
+.sectwo:hover{
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media(max-width:700px){
+	.row{
+		flex-direction: column;
+	}
+	
+	.navi-links ul li{
+		font-size: 20px;
+	}
+	
+	.search{
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	
+	.contact-wrapper{
+		flex-direction: column;
+	}
+	
+	.rev-container{
+		flex-direction: column;
+		height: auto;
+	}
+	
+	.slideshow-container img{
+		height: 400px;
+	}
+	
+	/*this is to design button*/
+}
+.button{
+	background:#8fbc8f;
+	color:#3b5998;
+	border-radius: 50px;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.button:hover{
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+	background: #87ceeb;
+}
+
+.rev-section body{
+	display: flex;
+	min-height: 100vh;
+}
+.rev-section h2{
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #2f4f2f;
+	margin-bottom: 5px;
+}
+.rev-section p{
+	font-size:18px ;
+	color: #3b5998;
+	font-weight: 400;
+}
+.rev-section{
+	margin:auto;
+	max-width: 1100px;
+	text-align: center;
+	padding: 0 1rem;
+}
+
+.rev-container{
+	margin:auto ;
+	display: flex;
+	box-sizing: border-box;
+	height: 780px;
+	width: 1200px;
+	
+	
+}
+.review{
+	margin:0 1rem ;
+	min-width: 300px;
+	flex: 1;
+}
+.head-review{
+	margin:auto;
+	margin-top: 25px;
+	width: 150px;
+	height: 150px;
+
+}
+.head-review img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.body-review{
+	background-color:#e6e6e6;
+	padding: 40px;
+	border-radius: 10px;
+	margin-top: 15px;
+}
+.body-review h3{
+	text-align: center;
+	font-size:24px;
+	color: black;
+	margin-bottom:10px ;
+
+}
+.body-review p{
+	font-size: 15px;
+	color:black ;
+	letter-spacing: 1px;
+	line-height: 1.5rem;
+}
+
+
+
+/*End Of Home PAge*/
+
+
+/*-------------FOR ABOUT US PAGE-----------------*/
+.heading h1{
+	font-size:80px;
+	color:#ffffff;
+	position: relative;
+	padding: 50px;
+	background:#669966 ;
+	margin: auto;
+	text-align: center;
+}
+
+.heading p{
+	font-size: 40px;
+	color:black;
+	padding: 35px;
+	justify-content: space-between;
+	line-height: 1.5;
+	margin: auto;
+}
+
+
+.abcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 60px; 
+    width: 70%;
+    margin: 100px auto; 
+}
+
+.absection {
+    display: flex; 
+    align-items: center;
+    gap: 20px; 
+}
+
+.absection-left {
+    flex-direction: row; 
+}
+
+.absection-right {
+    flex-direction: row-reverse; 
+}
+
+.absection img {
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%; 
+}
+
+.about {
+    flex: 1; 
+    padding: 10px;
+}
+
+.about h2 {
+    font-size: 50px;
+    color: #3f4f2f; 
+}
+
+.about p {
+    font-size: 30px; 
+    line-height: 1.5; 
+    color: #3b5998; 
+}
+
+/* ***************Footer ***************/
+
+footer{
+	background-color:#3b5998 ;
+	margin: auto;
+}
+.footcontainer{
+	width: auto;
+	padding:40px;
+	margin: auto;
+
+}
+
+.Sicon{
+	display: flex;
+	justify-content: center;
+
+}
+.Sicon a{
+	padding: 10px;
+	background-color:#87CEEB;
+	margin:10px;
+	margin-top: 2px;
+	border-radius:50%;
+}
+.Sicon a i{
+	font-size: 3em;
+	color:#3B5998;
+	opacity: 0.9;
+}
+.Sicon a:hover{
+	background: #8fbc8f;
+	transition: 0.5s;
+}
+
+.footernav{
+	margin: 25px;
+
+}
+.footernav ul{
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+.footernav ul li a{
+	color: white;
+	font-weight: 300;
+	margin: 20px;
+	transition: 0.5s;
+	font-size: 20px;
+
+}
+.footernav ul li a:hover{
+	padding:10px;
+	transition: 0.5s;
+	background:#8FBC8F;
+	border-radius:50px;
+}
+.copyrighttext{
+	text-align: center;
+	background:#8fbc8f;
+	padding: 10px;
+	margin: auto;
+	width: 100%;
+}
+
+
+/* ***************INformation ANd Support PAGE***************/
+
+.heading h2{
+	font-size:80px;
+	color: white;
+	position: relative;
+	padding: 50px;
+	background:#669966;
+	margin: auto;
+	text-align: center;
+}
+ .heading p{
+ font-size: 40px;
+	color:black;
+	padding: 35px;
+	justify-content: space-between;
+	line-height: 1.5;
+	margin: auto;
+}
+.infocontainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+	flex-wrap:wrap ;
+}
+
+.info-box{
+	width: 350px;
+	height: 800px;
+	background-color: #8fbc8f;
+	border: 1px solid #3b5998;
+	margin: 20px;
+	border-radius: 15px;
+}
+/*
+.info-img{
+	width: 100%;
+	height: auto;
+}*/
+
+.info-img img{
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 15px;
+	margin: auto;
+}
+
+.info-text{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	justify-content: space-between;
+}
+.info-text .infoHead{
+	font-size: 25px;
+	font-weight: bold;
+	color: #3b5998;
+}
+.info-text .infoHead:hover{
+	color: #8c3b98;
+	transition: all ease 0.3s;
+
+}
+.info-text p{
+	color: #263961;
+	font-size: 18px;
+	font-weight: 600;
+	overflow:auto;
+	margin-bottom: 25px;
+	text-align: left;
+}
+
+.info-text a{
+	color:#3b5998 ;
+	display: block;
+	margin-top: auto;
+	margin-left: 30px;
+}
+.info-text a:hover{
+	color: #8c3b98;
+}
+
+
+/**************** INFORMATION PAGE*********/
+
+.boxhead h1{
+	font-size: 50px;
+	font-weight:bold;
+	text-align: center;
+	color: white;
+	background:#13293D;
+	padding: 25px;
+	width: 100%;
+	margin: auto;
+}
+
+.boxhead p{
+	font-size: 30px;
+	color: black;
+	line-height: 1.5;
+	font-weight: 500;
+	margin-left:30px ;
+	margin-top: 15px;
+}
+
+.Uboxinfo h2{
+	font-size: 40px;
+	color:#2f4f2f;
+	font-weight: bold;
+	margin-top:15px;
+	margin-bottom: 10px;
+	margin-left:30px ;
+
+}
+
+.Uboxinfo p{
+	font-size: 25px;
+	color: black;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-left: 30px;
+}
+
+
+.Uboxinfo a{
+	font-size: 30px;
+	font-weight: 500;
+	color:#95258D;
+	padding: 2px;
+	margin-left: 30px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+
+} 
+.Uboxinfo a:hover{
+	color: #4682B4;
+	transition: 0.3s;
+}
+.Uboxinfo a:visited{
+	color: #6A5ACD;
+}
+
+.Uboxinfo ul li{
+	font-size: 30px;
+	margin-left: 35px;
+}
+/***************Information page end i add few elements later on and maybe change theme based on sir feedback***/
+
+
+/**************** INFORMATION Read More Page*********/
+
+.Inforeadmore h2{
+	font-size: 40px;
+	color:#2f4f2f;
+	font-weight: bold;
+	margin-top:15px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	text-decoration: underline;
+
+}
+.Inforeadmore h1{
+	font-size:40px;
+	font-weight:bold;
+	text-align: center;
+	color: white;
+	background: #3b5998;
+	padding: 25px;
+	width: 100%;
+	margin: auto;
+}
+
+.Inforeadmore p{
+	font-size: 25px;
+	color: black;
+	font-weight: 650;
+	line-height: 1.2;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+
+.Inforeadmore ul li{
+	font-size: 25px;
+	font-weight: 500;
+	list-style-type: square;
+	margin-left: 35px;
+	line-height: 35px;
+	color:#2f4f2f ;
+}
+
+.Inforeadmore h3{
+	font-size:50px;
+	margin-left: 30px;
+}
+
+.Inforeadmore a{
+	color: #3d8b40;
+}
+.Inforeadmore a:hover{
+	color: #4682B4;
+}
+.Inforeadmore a:visited{
+	color: #6A5ACD;
+}
+
+.Inforeadmore iframe{
+	align-items: center;
+	height: auto;
+	width: auto;
+
+}
+.References ul li{
+	font-weight:300;
+}
+
+.References a{
+	color: #3d8b40;
+}
+.References a:hover{
+	color: #4682B4;
+}
+.References a:visited{
+	color: #6A5ACD;
+}
+/*INFORMATION PAGE END*/
+
+
+/*===========HELPING SOMEONE ELSE===============*/
+
+/*Uboxinfo this class used for para h2 and a*/
+/*boxhead this class used for h1 and first para*/
+.Uboxinfo1 h2{
+	color: #56263c;
+	font-size: 35px;
+
+}
+.Uboxinfo1 h4{
+	font-size: 25px;
+	margin-left: 30px;
+	color: #2f4f2f;
+	font-weight: 600;
+}
+.Uboxinfo1 span{
+	font-size:25px;
+	margin-left: 20px;
+	line-height: 1.5;
+	color: #2f4f2f;
+	font-weight: 500;
+
+}
+.Uboxinfo1 a{
+	background: none;
+	color: #8fbc8f;
+	font-size: 20px;
+}
+.Uboxinfo1 a:hover{
+	background: none;
+}
+.Uboxinfo1{
+	box-sizing: border-box;
+	background: #e2bece;
+	margin: auto;
+}
+/*---About Support and services-*/
+
+.Asupport h2{
+	font-size: 40px;
+	color:#2f4f2f;
+	font-weight: bold;
+	margin-top:15px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	text-decoration: underline;
+}
+
+.Asupport a{
+	color: #2f4f2f;
+}
+.Asupport a:visited{
+	color: #3b5998;
+}
+
+.Asupport span{
+	font-size: 25px;
+	color: black;
+	font-weight: 450;
+	margin-left: 30px;
+	margin-top: 15px;
+	text-align: left;
+	letter-spacing:1px;
+}
+
+/*===============NEWSLETTER========*/
+
+.newsletter{
+	width: 100%;
+	height: 10vh;
+	position: absolute;
+	margin-bottom: 50px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+/*=============================contact us page  =======*/
+.contact {
+    background: #8fbc8f;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact h1{
+	color: white;
+	font-size: 30px;
+	margin-bottom: 80px;
+	text-align: center;
+	justify-content: center;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px; 
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+.contact-form {
+    flex: 1; 
+    text-align: left;
+}
+.contact-form h2{
+	margin-bottom: 20px;
+	text-align: center;
+	color: white;
+}
+
+.contact-info {
+    flex: 1; 
+    text-align: left;
+    padding-left: 30px; 
+}
+.contact-info h2{
+	color: white;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.contact-info p{
+	color: white;
+	margin-bottom: 30px;
+	margin-top: 50px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.contact-info i{
+	color: #3b5998;
+	margin-right: 15px;
+	font-size: 23px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #3b5998; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #8fbc8f; /* Change color on hover */
+}
+
+/*=============================Donation page  =======*/
+
+.Donation h1{
+	font-size:80px;
+	color: #000;
+	position: relative;
+	padding: 50px;
+	background:#95258d;
+	margin: auto;
+	text-align: center;
+}
+
+.Donation p{
+	font-size: 40px;
+	color:black;
+	padding: 35px;
+	justify-content: space-between;
+	line-height: 1.5;
+	margin-left: 30px;
+}
+
+.Donate h2{
+	margin-left: 30px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 50px;
+	color: #2f4f2f;
+}
+
+.Donate h3{
+	font-size: 30px;
+	font-weight: 500;
+	color:#3b5998;
+	margin-left: 30px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.Donate p{
+	margin-left: 30px;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+
+.Dcontainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+	margin-top: 20px;
+	min-height:100vh ;
+	background-image: url(donationbackbanner.png);
+	padding-bottom: 70px;
+}
+
+.Dcontainer form{
+	padding: 20px;
+	width: 700px;
+	background: white;
+	box-shadow: 0px 5px orangered;
+
+}
+
+.Dcontainer form .Drow{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.Dcontainer form .Drow .Dcol{
+
+	flex: 1 1 25px;
+}
+
+.Dcontainer form .Drow .Dcol h3{
+
+	font-size: 20px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.Dinputbox{
+	margin: 15px 0;
+}
+.Dinputbox p{
+	margin-bottom:10px;
+	display: block;
+
+}
+.Dinputbox input{
+	width: 100%;
+	border-radius: 10px;
+	border:1px solid #ccc;
+	padding: 10px 15px;
+	font-size: 15px;
+
+}
+
+.Dflex{
+	display:flex ;
+	gap: 15px;
+}
+
+.Dflex .Dinputbox{
+	margin-top: 5px;
+
+}
+
+.Dcontainer form .Drow .Dcol .Dinputbox img{
+	height: 34PX;
+	margin-top: 5px;
+	filter: drop-shadow(0 0 1px yellowgreen);
+
+}
+.Dcontainer form .Dbutton{
+	width: 100%;
+	padding:12px;
+	font-size: 18px;
+	border-radius: 15px;
+	background: #8fbc8f;
+	margin-top: 5px;
+	color: #3b5998;
+	cursor: pointer;
+
+}
+.Dcontainer form .Dbutton:hover{
+	background: #87ceeb;
+}
+
+
+/*=========Become A Member =============*/
+
+.BeBody{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(registrationbanner.png);
+	padding: 20px;
+}
+
+.Bcontainer{
+	position: relative;
+	max-width: 700px;
+	width: 100%;
+	background:#3b5998;
+	padding: 25px;
+	border-radius: 10px;
+}
+
+.Bcontainer h2{
+	font-size: 25px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+.Bcontainer .Bform{
+	margin-top:30px;
+}
+
+.Bform .Binput-box{
+	width: 100%;
+	margin-top: 20px;
+
+}
+
+.Binput-box label{
+	color:white;
+}
+
+.Bform .Binput-box input,.Bselect{
+	position: relative;
+	height: 50px;
+	width: 100%;
+	border-radius: 8px;
+	padding: 0 15px;
+	color: black;
+	margin-top:8px ;
+	
+	}
+
+	.Bform .Bcol{
+		display: flex;
+		column-gap:15px;
+
+	}
+
+	.Bform .Genderbox{
+		margin-top: 20px;
+	}
+
+	.Genderbox h3{
+		margin-bottom: 10px;
+		font-weight: 400;
+		color: white;
+	}
+
+	.Bform :where(.genderoption,.gender){
+		display: flex;
+		align-items: center;
+		column-gap: 50px;
+		flex-wrap: wrap;
+		row-gap: 15px;
+
+	}
+
+	.Bform .gender{
+		column-gap: 5px;
+		cursor: pointer;
+
+	}
+	.Bform :where(.gender input,.gender label){
+		cursor: pointer;
+	}
+
+	.Bselect select{
+		height: 100%;
+		width: 100%;
+		outline: none;
+		border: none;
+		color:#707070 ;
+		font-size: 16px;
+	}
+
+	.Bform button{
+		height: 55px;
+		width: 30%;
+		color: white;
+		background: #8fbc8f;
+		border-radius: 15px;
+		font-size: 20px;
+		font-weight: bold;
+		margin-top: 15px;
+		cursor: pointer;
+
+	}
+
+	.Bform button:hover{
+		background: #87ceeb;
+		opacity: 3;
+
+	}
+
+	.address input,.Bselect{
+		margin-top: 15px;
+
+	}
+
+	/*...............Speak Psychiatrist Signup Button........*/
+
+	.psycontainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+	margin-top: 20px;
+	min-height:100vh ;
+	padding-bottom: 70px;
+	background-image: url(donationbackbanner.png);
+	}
+
+	.form-box{
+	padding: 50px 60px 70px;
+	width: 700px;
+	text-align: center;
+	background: #3b5998;
+	}
+	.form-box h1{
+		font-size: 30px;
+		margin-bottom: 60px;
+		color:white;
+		position: relative;
+	}
+
+	.input-field{
+		background:#8fbc8f;
+		margin: 15px;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		max-height: 65px;
+		transition: max-height 0.5s;
+		overflow: hidden;
+	}
+	.input-field input{
+		width: 100%;
+		border: 0;
+		outline: none;
+		background: transparent;
+		padding: 18px 15px;	
+	}
+
+	.input-group p{
+		color: #8fbc8f;
+		font-size: 20px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+	.input-group a{
+		margin-left: 10px;
+		color: #87ceeb;
+	}
+
+	.input-field i{
+		margin-left:20px ;
+		color:#316331 ;
+	}
+
+.bt-field{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.bt-field button{
+	flex-basis:49% ;
+	color: #316331;
+	height: 40px;
+	border-radius: 15px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: background 1s;
+}
+
+.bt-field button.disable{
+	background:#8fbc8f ;
+	color: #316331;
+}
+
+.input-group{
+	height: 280px;
+}
+
+/*----Helpline section------*/
+
+.helpli h1{
+	font-size: 50px;
+	font-weight:bold;
+	text-align: center;
+	color: white;
+	background:#13293D;
+	padding: 25px;
+	width: 100%;
+	margin: auto;
+}
+
+.helpli h2{
+	font-size: 40px;
+	color:#2f4f2f;
+	font-weight: bold;
+	margin-top:15px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	text-decoration: underline;
+}
+.helpli span{
+	margin-top: 15px;
+	font-size: 25px;
+	color: #3b5998;
+	font-weight: 500;
+	margin-left: 30px;
+	margin-top: 25px;
+
+}
+.helpli p{
+	font-size: 25px;
+	color: black;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-left: 30px;
+	margin-top: 25px; 
+}
+.helpli ul li {
+	font-size: 25px;
+	font-weight: 500;
+	list-style-type: square;
+	margin-left: 35px; 
+	margin-top: 20px;
+}
+
+/*--------END of this section------*/
+
+/*-----Chat Anonmously----*/
+
+
+
+
